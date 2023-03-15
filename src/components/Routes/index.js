@@ -48,6 +48,22 @@ import Purchasing from 'pages/Purchasing';
 import OtwWhChina from 'pages/Purchasing/OtwWhChina';
 import AbnormalPurchasing from 'pages/Purchasing/AbnormalPurchasing';
 import Approval from 'pages/Purchasing/Approval';
+
+//MASTER DATA
+import Artikel from 'pages/Masterdata/Artikel/index';
+import Kontak from 'pages/Masterdata/Kontak';
+import Penulis from 'pages/Masterdata/Penulis';
+import EditPenulis from 'pages/Masterdata/Penulis/edit';
+
+import Editor from 'pages/Masterdata/Editor';
+import EditEditor from 'pages/Masterdata/Editor/edit';
+import Add from 'pages/Masterdata/Artikel/add';
+import EditArtikel from 'pages/Masterdata/Artikel/edit';
+import AddPenulis from 'pages/Masterdata/Penulis/addPenulis';
+import AddEditor from 'pages/Masterdata/Editor/addEditor';
+import TabelPagination from 'pages/Masterdata/Artikel';
+
+
 //LOGISTIC CHINA
 import LogisticChina from 'pages/LogisticChina';
 import Repacking from 'pages/LogisticChina/Repacking';
@@ -229,6 +245,25 @@ const Routes = () => {
         <MemberRoute exact path="/logistic-indo/logistics-indo" component={PaymentLogisticIndo} />
         <MemberRoute exact path="/logistic-indo/form-actual-price" component={FormActualPrice} />
         <MemberRoute exact path="/logistic-indo/abnormal" component={Abnormal} />
+
+
+         {/* Master Data */}
+         <MemberRoute exact path="/master-data" component={Artikel} />
+         <MemberRoute exact path="/masterdata/artikel" component={Artikel} />
+        <MemberRoute exact path="/masterdata/kontak" component={Kontak} />
+        {/* <MemberRoute exact path="/masterdata/penulis" component={Penulis} />
+        <MemberRoute exact path="/masterdata/penulis/edit/:id" component={EditPenulis} /> */}
+        {/* <MemberRoute exact path="/masterdata/editor" component={Editor} />
+        <MemberRoute exact path="/masterdata/editor/edit/:id" component={EditEditor} /> */}
+        <MemberRoute exact path="/masterdata/artikel/add" component={Add} />
+        <MemberRoute exact path="/masterdata/artikel/edit/:id" component={EditArtikel} />
+        {/* <MemberRoute exact path="/masterdata/artikel/indexnew" component={TabelPagination} /> */}
+{/* 
+        <MemberRoute exact path="/masterdata/penulis/add" component={AddPenulis} />
+        <MemberRoute exact path="/masterdata/editor/add" component={AddEditor} /> */}
+   
+        
+        
 
         {/* After Sales */}
         <MemberRoute exact path="/after-sales" component={AfterSales} />
