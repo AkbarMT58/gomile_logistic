@@ -1,0 +1,11 @@
+{
+  "window.zoomLevel": -1,
+  // "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // "prettier.singleQuote": true,
+  "prettier.disableLanguages": ["vue", "ejs"],
+  "prettier.jsxBracketSameLine": true,
+  "window.commandCenter": false
+}

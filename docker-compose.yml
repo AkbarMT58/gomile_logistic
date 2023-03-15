@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  oms-staging:
+    image: ocistok/oms-fe-staging:latest
+    environment:
+      - REACT_APP_URL_API_GATEWAY=$REACT_APP_URL_API_GATEWAY
+      - REACT_APP_URL_API_GATEWAY_LOGIN=$REACT_APP_URL_API_GATEWAY_LOGIN
+      - REACT_APP_URL_API_IMAGE_UPLOAD=$REACT_APP_URL_API_IMAGE_UPLOAD
+      - REACT_APP_URL_API_GET_ADD_VARIANT=$REACT_APP_URL_API_GET_ADD_VARIANT
+    container_name: oms-$CONTAINER_NAME
+    restart: always
+    ports:
+      - $PORT:5000
